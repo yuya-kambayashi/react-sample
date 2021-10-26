@@ -18,6 +18,16 @@ export const Top = () => {
     setUserInfo({ isAdmin: false });
     history.push("/users");
   };
+
+  const onClickGeneraSample1 = () => {
+    setUserInfo({ isAdmin: false });
+    history.push("/sample1");
+  };
+
+  const onClickGeneraSample2 = () => {
+    setUserInfo({ isAdmin: false });
+    history.push("/sample2");
+  };
   return (
     <SContainer>
       <h2>TOP</h2>
@@ -25,6 +35,12 @@ export const Top = () => {
       <br />
       <br />
       <SecondaryButton onClick={onClickGeneral}>一般</SecondaryButton>
+      <br />
+      <br />
+      <SecondaryButton onClick={onClickGeneraSample1}>サンプル１</SecondaryButton>
+      <br />
+      <br />
+      <SecondaryButton onClick={onClickGeneraSample2}>サンプル２</SecondaryButton>
     </SContainer>
   );
 };
